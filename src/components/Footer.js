@@ -1,4 +1,5 @@
-
+import { Link } from 'react-router-dom';
+import logo from '../assets/Logo.svg';
 
 function Footer() {
   return (
@@ -6,10 +7,15 @@ function Footer() {
         <img src={logo} alt="Little Lemon Logo" />
         <nav>
             <ul>
-            <li><a href="/">Home</a></li>
+            {/* <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/menu">Menu</a></li>
-            {/* Add li for Reseravations, Order Online, Login */}
+            <li><a href="/menu">Menu</a></li> */}
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link to="/booking">Reservations</Link></li>
+                <li><Link to="/order-online">Order Online</Link></li>
+                <li><Link to="/login">Login</Link></li>
             </ul>
         </nav>
         <div>
@@ -17,14 +23,14 @@ function Footer() {
             <p>Contact us:</p>
             <p>123 Main Street, Anytown</p>
             <p>Phone: 555-123-4567</p>
-            {/* Add email  */}
+            <p>Email: info@littlelemon.com</p>
         </div>
         <div>
             {/* Social media links */}
             <p>Follow us:</p>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <a href="https://www.google.com/">Facebook</a>
+            <a href="https://www.google.com/">Twitter</a>
+            <a href="https://www.google.com/">Instagram</a>
         </div>
     </footer>
   );

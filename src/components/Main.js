@@ -1,10 +1,16 @@
-
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage";
+import BookingPage from "./BookingPage";
 
 
 function Main() {
     return (
       <main>
-        {/* Main content */}
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/booking" element={<BookingPage />} />
+            {/* Add more routes as needed */}
+        </Routes>
       </main>
     );
   }

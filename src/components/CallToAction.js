@@ -1,23 +1,22 @@
+import logo from '../assets/Logo.svg';
 
-import headerFood from '../assets/header.png';
-
-function Header() {
+function CallToAction() {
   return (
-    <header className="hero">
+    <section className="hero">
       <div className="hero-text">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
-          We are a family-owned Mediterranean restaurant, focused on traditional
+          We are a family-owned Mediterranean restaurant focused on traditional
           recipes served with a modern twist.
         </p>
         <button>Reserve a Table</button>
       </div>
       <div className="hero-image">
-        <img src={headerFood} alt="Restaurant hero" />
+        <img src={logo} alt="Little Lemon Restaurant" />
       </div>
-    </header>
+    </section>
   );
 }
 
-  export default Header;
+export default CallToAction;
