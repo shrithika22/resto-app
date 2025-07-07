@@ -1,8 +1,10 @@
-function BookingPage() {
+import BookingForm from './BookingForm';
+
+function BookingPage({ availableTimes, dispatch, onSubmit }) {
   return (
-    <section className="booking">
+    <section style={{ padding: '2rem' }}>
       <h2>Reserve a Table</h2>
-      <p>Booking form coming soon!</p>
+      <BookingForm availableTimes={availableTimes} dispatch={dispatch} onSubmit={onSubmit}/>
     </section>
   );
 }

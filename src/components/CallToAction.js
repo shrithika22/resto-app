@@ -1,4 +1,4 @@
-import logo from '../assets/Logo.svg';
+import headerFood from '../assets/header.png';
 
 function CallToAction() {
   return (
@@ -13,7 +13,7 @@ function CallToAction() {
         <button>Reserve a Table</button>
       </div>
       <div className="hero-image">
-        <img src={logo} alt="Little Lemon Restaurant" />
+        <img src={headerFood} alt="Little Lemon Restaurant" />
       </div>
     </section>
   );
