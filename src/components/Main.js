@@ -20,6 +20,11 @@ function Main() {
     return stored ? JSON.parse(stored) : [];
   });
 
+  const clearBookings = () => {
+    localStorage.removeItem('bookingData');
+    alert('All bookings have been cleared!');
+  };
+
   useEffect(() => {
     localStorage.setItem("bookingData", JSON.stringify(bookingData));
   }, [bookingData]);
@@ -55,6 +60,24 @@ function Main() {
           <section style={{ marginTop: "2rem" }}>
             {/* <h2>Your Bookings</h2> */}
             <BookingTable bookingData={bookingData} />
+            <button onClick={clearBookings}
+              style={{
+                backgroundColor: '#f4ce20',
+                color: 'white',
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                marginTop: '20px',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                transition: 'background-color 0.3s ease',
+              }}
+              onMouseOver={(e) => (e.target.style.backgroundColor = '#b71c1c')}
+              onMouseOut={(e) => (e.target.style.backgroundColor = '#c62828')}
+            >
+              Clear Bookings
+            </button>
           </section>
         )}
       </main>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { submitAPI } from './bookingsAPI';
+// import { submitAPI } from './bookingsAPI';
+import { isFormValid } from './formValidation';
 
 function BookingForm({ availableTimes, dispatch, onSubmit}) {
   const [date, setDate] = useState('');
@@ -55,6 +56,13 @@ function BookingForm({ availableTimes, dispatch, onSubmit}) {
 
   };
 
+  // const isFormValid =
+  // date.trim() !== "" &&
+  // time.trim() !== "" &&
+  // guests >= 1 &&
+  // guests <= 10 &&
+  // occasion.trim() !== "";
+
 
   return (
     <>
@@ -105,7 +113,18 @@ function BookingForm({ availableTimes, dispatch, onSubmit}) {
           <option value="Anniversary">Anniversary</option>
         </select>
 
-        <input type="submit" value="Make Your reservation" />
+        <input
+          type="submit"
+          value="Make Your reservation"
+          disabled={!isFormValid}
+          style={{
+            backgroundColor: isFormValid ? '#f4ce14' : '#ccc',
+            cursor: isFormValid ? 'pointer' : 'not-allowed',
+            padding: '0.5rem',
+            borderRadius: '8px',
+            border: 'none'
+          }}
+        />
       </form>
       {submissionStatus === "success" && <p style={{ color: "green" }}>✅ Reservation successful!</p>}
       {submissionStatus === "error" && <p style={{ color: "red" }}>❌ Something went wrong.</p>}
