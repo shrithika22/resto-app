@@ -1,4 +1,5 @@
-import chef from '../assets/chef.jpg';
+import chef1 from '../assets/chef.webp';
+import chef2 from '../assets/chef1.png';
 
 function Chicago() {
   return (
@@ -12,8 +13,8 @@ function Chicago() {
         </p>
       </div>
       <div className="chicago-images">
-        <img src={chef} alt="Adrian" />
-        <img src={chef} alt="Mario" />
+        <img src={chef1} alt="Adrian" />
+        <img src={chef2} alt="Mario" />
       </div>
     </section>
   );

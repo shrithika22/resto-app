@@ -1,7 +1,9 @@
 
 import headerFood from '../assets/header.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
+
   return (
     <header className="hero">
       <div className="hero-text">
@@ -9,9 +11,10 @@ function Header() {
         <h2>Chicago</h2>
         <p>
           We are a family-owned Mediterranean restaurant, focused on traditional
-          recipes served with a modern twist.
+          recipes served with a modern twist.......
         </p>
-        <button>Reserve a Table</button>
+        <Link className="action-button" to="/booking">Reserve a table</Link>
+        <Link className="action-button" to="/booking">Reserve a table</Link>
       </div>
       <div className="hero-image">
         <img src={headerFood} alt="Restaurant hero" />

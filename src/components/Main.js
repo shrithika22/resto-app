@@ -10,6 +10,9 @@ import ConfirmedBooking from './ConfirmedBooking';
 import { useNavigate } from 'react-router-dom';
 
 import { useEffect } from "react";
+import About from "./About";
+import Menu from "./Menu";
+import OrderOnline from "./OrderOnline";
 
 function Main() {
 
@@ -44,6 +47,9 @@ function Main() {
       <main>
         <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/order-online" element={<OrderOnline />} />
             <Route path="/booking" element={
               <BookingPage 
                 availableTimes={availableTimes} 

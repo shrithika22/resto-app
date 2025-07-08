@@ -25,12 +25,12 @@ function Footer() {
             <p>Phone: 555-123-4567</p>
             <p>Email: info@littlelemon.com</p>
         </div>
-        <div>
+        <div className="social-links">
             {/* Social media links */}
             <p>Follow us:</p>
-            <a href="https://www.google.com/">Facebook</a>
-            <a href="https://www.google.com/">Twitter</a>
-            <a href="https://www.google.com/">Instagram</a>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
     </footer>
   );

@@ -1,6 +1,14 @@
 import headerFood from '../assets/header.png';
+import { useNavigate } from 'react-router-dom';
 
 function CallToAction() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/booking');
+  };
+
   return (
     <section className="hero">
       <div className="hero-text">
@@ -10,7 +18,7 @@ function CallToAction() {
           We are a family-owned Mediterranean restaurant focused on traditional
           recipes served with a modern twist.
         </p>
-        <button>Reserve a Table</button>
+        <button onClick={handleClick}>Reserve a Table</button>
       </div>
       <div className="hero-image">
         <img src={headerFood} alt="Little Lemon Restaurant" />
