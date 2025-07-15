@@ -1,3 +1,9 @@
+## Screenshots
+
+<img src="https://github.com/shrithika22/resto-app/blob/main/client/src/assets/Screenshot1.png" alt="App Screenshot" width="550"/>
+<img src="https://github.com/shrithika22/resto-app/blob/main/client/src/assets/Screenshot2.png" alt="App Screenshot" width="550"/>
+<img src="https://github.com/shrithika22/resto-app/blob/main/client/src/assets/Screenshot3.png" alt="App Screenshot" width="550"/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
