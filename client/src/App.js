@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* <Header/> */}
       <Main/>
       <Footer/>
+      <ChatBot/>
     </>
   );
 }
